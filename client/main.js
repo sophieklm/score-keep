@@ -1,4 +1,9 @@
-import { greetUser } from './../imports/utils';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Meteor} from 'meteor/meteor';
 
-console.log('Log from /client/mains.js');
-console.log(greetUser());
+Meteor.startup(function () {
+  let name = "Sophie";
+  let jsx = <p id="my-p">Hello {name}!</p>;
+  ReactDOM.render(jsx, document.getElementById('app'));
+});
