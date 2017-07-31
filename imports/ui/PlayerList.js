@@ -18,3 +18,7 @@ export default class PlayerList extends React.Component {
     );
   }
 }
+
+PlayerList.propTypes = {
+  players: PropTypes.array.isRequired
+};
