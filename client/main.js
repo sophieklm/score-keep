@@ -9,6 +9,7 @@ Meteor.startup(() => {
   Tracker.autorun(() =>{
     let players = Players.find({}, {sort: {score: -1}}).fetch();
     let title = "Score Keep";
-    ReactDOM.render(<App title={title} players={players}/>, document.getElementById('app'));
+    let subtitle="Created by Sophie Mann";
+    ReactDOM.render(<App title={title} subtitle={subtitle} players={players}/>, document.getElementById('app'));
   });
 });
