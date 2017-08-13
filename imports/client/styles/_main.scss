@@ -25,6 +25,11 @@ input, button, select {
   font-size: 1.3rem;
 }
 
+.increment {
+  flex-grow: 1;
+  padding: 1rem 1.3rem 1rem 1.3rem;
+}
+
 h1 {
   font-weight: lighter;
   font-size: 2.4rem;
